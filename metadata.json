@@ -1,0 +1,6 @@
+{
+  "name": "Horizon Properties",
+  "description": "Horizon Properties offers ultra-luxury properties, beachfront villas, and high-end estates in Nairobi, Mombasa, Diani Beach, Watamu, Malindi, Naivasha, and Nanyuki. Schedule a luxury viewing today.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

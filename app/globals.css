@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
+  --color-gold-50: #faf7f0;
+  --color-gold-100: #f4ecdc;
+  --color-gold-200: #e8d7b8;
+  --color-gold-500: #c5a25d; /* Timeless elegant luxury gold */
+  --color-gold-600: #b08d4b;
+  --color-gold-700: #93733b;
+  --color-charcoal-50: #f7f7f6;
+  --color-charcoal-100: #efeff0;
+  --color-charcoal-200: #dfdfe0;
+  --color-charcoal-300: #c2c2c5;
+  --color-charcoal-500: #7b7b7f;
+  --color-charcoal-700: #49494c;
+  --color-charcoal-800: #2d2d30;
+  --color-charcoal-900: #141416;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #c5a25d;
+  color: #141416;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
