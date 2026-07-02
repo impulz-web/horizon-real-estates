@@ -58,7 +58,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
           {/* Top-Right Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-white/90 text-slate-700 hover:text-[#006ce4] border border-slate-200 flex items-center justify-center transition-colors focus:outline-none cursor-pointer shadow-sm"
+            className="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-white/90 text-slate-700 hover:text-[#1A4B40] border border-slate-200 flex items-center justify-center transition-colors focus:outline-none cursor-pointer shadow-sm"
             aria-label="Close Modal"
           >
             <X className="w-4.5 h-4.5" />
@@ -77,14 +77,14 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
                   referrerPolicy="no-referrer"
                   sizes="(max-w-1024px) 100vw, 50vw"
                 />
-                <div className="absolute bottom-4 left-4 bg-white/95 text-[#003b95] text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 border border-slate-200 rounded shadow-sm">
+                <div className="absolute bottom-4 left-4 bg-white/95 text-[#1A4B40] text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 border border-slate-200 rounded shadow-sm">
                   {property.tag}
                 </div>
               </div>
 
               {/* Title & Location */}
               <div className="space-y-1">
-                <div className="flex items-center space-x-1 text-xs text-[#006ce4] uppercase tracking-wider font-bold">
+                <div className="flex items-center space-x-1 text-xs text-[#1A4B40] uppercase tracking-wider font-bold">
                   <MapPin className="w-3.5 h-3.5" />
                   <span>{property.location}</span>
                 </div>
@@ -103,17 +103,17 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
             <div className="space-y-4">
               <div className="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 text-xs text-slate-700 font-sans font-semibold">
                 <div className="flex items-center space-x-1.5 justify-center">
-                  <Bed3 className="w-4 h-4 text-[#006ce4]" />
+                  <Bed3 className="w-4 h-4 text-[#b28e46]" />
                   <span>{property.bedrooms > 0 ? `${property.bedrooms} Beds` : 'N/A'}</span>
                 </div>
                 <div className="w-[1px] h-4 bg-slate-200 self-center justify-self-center" />
                 <div className="flex items-center space-x-1.5 justify-center">
-                  <Bath className="w-4 h-4 text-[#006ce4]" />
+                  <Bath className="w-4 h-4 text-[#b28e46]" />
                   <span>{property.bathrooms} Baths</span>
                 </div>
                 <div className="w-[1px] h-4 bg-slate-200 self-center justify-self-center" />
                 <div className="flex items-center space-x-1.5 justify-center">
-                  <Maximize2 className="w-4 h-4 text-[#006ce4]" />
+                  <Maximize2 className="w-4 h-4 text-[#b28e46]" />
                   <span>{property.area}</span>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
                 </div>
                 <div className="sm:text-right mt-2 sm:mt-0 border-t sm:border-t-0 sm:border-l border-slate-200 pt-2 sm:pt-0 sm:pl-4">
                   <span className="text-[10px] uppercase tracking-wider font-bold text-slate-500">Local Currency Equivalent</span>
-                  <p className="text-sm font-sans text-[#008009] font-bold mt-0.5">
+                  <p className="text-sm font-sans text-[#107255] font-bold mt-0.5">
                     {property.priceKsh}
                   </p>
                 </div>
@@ -142,7 +142,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
             
             <div className="space-y-6">
               <div className="space-y-1">
-                <span className="text-[10px] uppercase tracking-wider text-[#006ce4] font-bold">Confidential Registry</span>
+                <span className="text-[10px] uppercase tracking-wider text-[#b28e46] font-bold">Confidential Registry</span>
                 <h4 className="font-sans text-base text-slate-900 font-bold">
                   Request Private Viewing
                 </h4>
@@ -154,7 +154,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
                   animate={{ opacity: 1 }}
                   className="space-y-4 py-8 text-center"
                 >
-                  <div className="w-10 h-10 rounded-full border border-blue-200 bg-white flex items-center justify-center text-[#006ce4] mx-auto shadow-sm">
+                  <div className="w-10 h-10 rounded-full border border-stone-200 bg-white flex items-center justify-center text-[#1A4B40] mx-auto shadow-sm">
                     <CheckCircle className="w-5 h-5" />
                   </div>
                   <h5 className="font-sans text-sm font-bold text-slate-900">Inquiry Dispatched</h5>
@@ -163,7 +163,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
                   </p>
                   <button
                     onClick={() => setFormSubmitted(false)}
-                    className="text-xs font-bold text-[#006ce4] hover:underline"
+                    className="text-xs font-bold text-[#1A4B40] hover:underline"
                   >
                     Submit Another Request
                   </button>
@@ -181,7 +181,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
                       placeholder="Your Name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      className="bg-white border border-slate-200 rounded p-2.5 text-xs text-[#1a1a1a] focus:border-[#006ce4] focus:outline-none"
+                      className="bg-white border border-slate-200 rounded p-2.5 text-xs text-[#1a1a1a] focus:border-[#1A4B40] focus:outline-none"
                     />
                   </div>
 
@@ -196,7 +196,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
                       placeholder="Your Email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="bg-white border border-slate-200 rounded p-2.5 text-xs text-[#1a1a1a] focus:border-[#006ce4] focus:outline-none"
+                      className="bg-white border border-slate-200 rounded p-2.5 text-xs text-[#1a1a1a] focus:border-[#1A4B40] focus:outline-none"
                     />
                   </div>
 
@@ -211,7 +211,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
                       placeholder="Secure Phone"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      className="bg-white border border-slate-200 rounded p-2.5 text-xs text-[#1a1a1a] focus:border-[#006ce4] focus:outline-none"
+                      className="bg-white border border-slate-200 rounded p-2.5 text-xs text-[#1a1a1a] focus:border-[#1A4B40] focus:outline-none"
                     />
                   </div>
 
@@ -225,7 +225,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
                       required
                       value={date}
                       onChange={(e) => setDate(e.target.value)}
-                      className="bg-white border border-slate-200 rounded p-2.5 text-xs text-[#1a1a1a] focus:border-[#006ce4] focus:outline-none cursor-pointer"
+                      className="bg-white border border-slate-200 rounded p-2.5 text-xs text-[#1a1a1a] focus:border-[#1A4B40] focus:outline-none cursor-pointer"
                     />
                   </div>
 
@@ -233,7 +233,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full flex items-center justify-center space-x-2 text-xs font-bold bg-[#006ce4] hover:bg-[#003b95] text-white py-3 rounded transition-colors duration-150 cursor-pointer shadow-xs"
+                    className="w-full flex items-center justify-center space-x-2 text-xs font-bold bg-[#1A4B40] hover:bg-[#0B2521] text-white py-3 rounded transition-colors duration-150 cursor-pointer shadow-xs"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>{loading ? 'Registering...' : 'Request Private Viewing'}</span>
@@ -244,7 +244,7 @@ export default function PropertyDetailModal({ property, onClose }: PropertyDetai
 
             {/* Footer Trust Shield */}
             <div className="pt-4 border-t border-slate-200 mt-6 flex items-center space-x-2 text-[10px] text-slate-500 font-sans uppercase font-bold tracking-wider">
-              <Shield className="w-4 h-4 text-[#006ce4] shrink-0" />
+              <Shield className="w-4 h-4 text-[#b28e46] shrink-0" />
               <span>Confidentiality Guaranteed</span>
             </div>
 

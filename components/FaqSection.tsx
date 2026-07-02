@@ -52,7 +52,7 @@ export default function FaqSection() {
         
         {/* Section Title */}
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-2">
-          <span className="text-xs font-bold text-[#006ce4] uppercase tracking-wider">
+          <span className="text-xs font-bold text-[#b28e46] uppercase tracking-wider">
             CLEAR ANSWERS
           </span>
           <h2 className="font-sans text-2xl sm:text-3xl text-slate-900 font-bold tracking-tight">
@@ -71,17 +71,17 @@ export default function FaqSection() {
             return (
               <div
                 key={index}
-                className="bg-white border border-slate-200 rounded-lg transition-all duration-150 hover:border-[#006ce4] shadow-xs overflow-hidden"
+                className="bg-white border border-slate-200 rounded-lg transition-all duration-150 hover:border-[#1A4B40] shadow-xs overflow-hidden"
               >
                 <button
                   onClick={() => toggleFaq(index)}
                   className="w-full flex items-center justify-between p-5 text-left focus:outline-none cursor-pointer"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-sans text-sm sm:text-base text-slate-900 font-bold pr-4 hover:text-[#006ce4] transition-colors">
+                  <span className="font-sans text-sm sm:text-base text-slate-900 font-bold pr-4 hover:text-[#1A4B40] transition-colors">
                     {faq.question}
                   </span>
-                  <span className="shrink-0 w-6 h-6 flex items-center justify-center border border-slate-200 rounded text-[#006ce4] bg-slate-50 group-hover:bg-[#006ce4]/5">
+                  <span className="shrink-0 w-6 h-6 flex items-center justify-center border border-slate-200 rounded text-[#1A4B40] bg-slate-50 group-hover:bg-[#1A4B40]/5">
                     {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
                   </span>
                 </button>

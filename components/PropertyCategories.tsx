@@ -21,7 +21,7 @@ export default function PropertyCategories() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-2">
-          <span className="text-xs font-bold text-[#006ce4] uppercase tracking-wider">
+          <span className="text-xs font-bold text-[#b28e46] uppercase tracking-wider">
             Bespoke Portfolios
           </span>
           <h2 className="font-sans text-2xl sm:text-3xl text-slate-900 font-bold tracking-tight">
@@ -47,14 +47,14 @@ export default function PropertyCategories() {
                 className="group border border-slate-200 bg-white hover:border-slate-300 p-6 shadow-sm hover:shadow-md transition-all duration-150 flex flex-col justify-between h-56 rounded-lg relative overflow-hidden"
               >
                 <div className="space-y-3">
-                  <div className="w-9 h-9 flex items-center justify-center border border-slate-200 rounded-md text-[#003b95] bg-[#006ce4]/5 transition-colors duration-150">
+                  <div className="w-9 h-9 flex items-center justify-center border border-slate-200 rounded-md text-[#1A4B40] bg-[#1A4B40]/5 transition-colors duration-150">
                     <IconComponent className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-sans text-base text-slate-900 font-bold group-hover:text-[#006ce4] transition-colors">
+                    <h3 className="font-sans text-base text-slate-900 font-bold group-hover:text-[#1A4B40] transition-colors">
                       {category.name}
                     </h3>
-                    <p className="text-[10px] tracking-wider font-sans uppercase font-bold text-[#008009] mt-0.5">
+                    <p className="text-[10px] tracking-wider font-sans uppercase font-bold text-[#107255] mt-0.5">
                       {category.count} Listings Available
                     </p>
                   </div>
@@ -63,7 +63,7 @@ export default function PropertyCategories() {
                   </p>
                 </div>
 
-                <div className="flex items-center space-x-1 text-xs font-bold text-[#006ce4] hover:underline transition-all mt-4 cursor-pointer">
+                <div className="flex items-center space-x-1 text-xs font-bold text-[#1A4B40] hover:underline transition-all mt-4 cursor-pointer">
                   <span>Explore Sector</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform duration-150 group-hover:translate-x-0.5" />
                 </div>

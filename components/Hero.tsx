@@ -27,42 +27,43 @@ export default function Hero({ onBrowseClick, onScheduleClick, onSearch }: HeroP
 
   return (
     <div id="home">
-      {/* Blue Header Section */}
-      <section className="bg-[#003580] pt-32 pb-20 px-4 sm:px-6 relative overflow-hidden text-white">
+      {/* Deep Emerald Header Section */}
+      <section className="bg-[#0B2521] pt-32 pb-20 px-4 sm:px-6 relative overflow-hidden text-white">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(178,142,70,0.06),transparent_60%)] pointer-events-none" />
         <div className="max-w-7xl mx-auto relative z-10 space-y-6">
           <div className="space-y-3">
-            <span className="text-xs tracking-wider text-[#ffb700] uppercase font-bold bg-[#ffb700]/10 px-3 py-1 rounded">
+            <span className="text-xs tracking-wider text-[#b28e46] uppercase font-bold bg-[#b28e46]/10 px-3 py-1 rounded">
               Official Luxury Real Estate Portal
             </span>
             <h1 className="font-sans text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
               Find your next luxury estate in Kenya
             </h1>
             <p className="font-sans text-sm sm:text-base md:text-lg text-white/90 max-w-3xl leading-relaxed">
-              Explore exclusive listings in <span className="font-semibold text-[#ffb700]">Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Naivasha, Nanyuki, Diani Beach, Watamu, and Malindi</span>. Discover handpicked mansions, beachfront penthouses, and elite safari sanctuaries.
+              Explore exclusive listings in <span className="font-semibold text-[#b28e46]">Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Naivasha, Nanyuki, Diani Beach, Watamu, and Malindi</span>. Discover handpicked mansions, beachfront penthouses, and elite safari sanctuaries.
             </p>
           </div>
 
           {/* Quick value props */}
           <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-xs text-white/80 font-sans">
             <div className="flex items-center space-x-1.5">
-              <Check className="w-4 h-4 text-[#ffb700] shrink-0" />
+              <Check className="w-4 h-4 text-[#b28e46] shrink-0" />
               <span>Discretion Guaranteed</span>
             </div>
             <div className="flex items-center space-x-1.5">
-              <Check className="w-4 h-4 text-[#ffb700] shrink-0" />
+              <Check className="w-4 h-4 text-[#b28e46] shrink-0" />
               <span>Direct Capital Advisor Match</span>
             </div>
             <div className="flex items-center space-x-1.5">
-              <Check className="w-4 h-4 text-[#ffb700] shrink-0" />
+              <Check className="w-4 h-4 text-[#b28e46] shrink-0" />
               <span>Verified Title deeds & Deeds of sale</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Horizontal Search Bar Section - Overlay Style like Booking.com */}
+      {/* Horizontal Search Bar Section - Elegant floating bar with a brass border */}
       <section className="px-4 sm:px-6 -mt-8 relative z-20">
-        <div className="max-w-7xl mx-auto bg-[#ffb700] p-1 rounded-lg shadow-lg">
+        <div className="max-w-7xl mx-auto bg-[#b28e46] p-[2px] rounded-lg shadow-lg">
           <form onSubmit={handleSubmit} className="bg-white rounded-md p-3 grid grid-cols-1 lg:grid-cols-12 gap-3 items-center">
             
             {/* Location selector */}
@@ -134,7 +135,7 @@ export default function Hero({ onBrowseClick, onScheduleClick, onSearch }: HeroP
             <div className="lg:col-span-2 w-full">
               <button
                 type="submit"
-                className="w-full text-center text-sm uppercase font-bold bg-[#006ce4] hover:bg-[#003b95] text-white py-3.5 px-4 transition-colors duration-150 cursor-pointer rounded-md shadow-sm"
+                className="w-full text-center text-sm uppercase font-bold bg-[#1A4B40] hover:bg-[#0B2521] text-white py-3.5 px-4 transition-colors duration-150 cursor-pointer rounded-md shadow-sm"
               >
                 Search
               </button>
@@ -152,7 +153,7 @@ export default function Hero({ onBrowseClick, onScheduleClick, onSearch }: HeroP
             <button
               key={city}
               onClick={() => onSearch({ location: city, type: '', budget: '' })}
-              className="px-3 py-1.5 bg-white border border-slate-200 hover:border-[#006ce4] hover:bg-slate-50 text-slate-700 transition-colors duration-150 cursor-pointer rounded"
+              className="px-3 py-1.5 bg-white border border-slate-200 hover:border-[#1A4B40] hover:bg-slate-50 text-slate-700 transition-colors duration-150 cursor-pointer rounded"
             >
               {city}
             </button>

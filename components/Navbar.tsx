@@ -47,8 +47,8 @@ export default function Navbar({ onScheduleClick, onNavigate }: NavbarProps) {
         id="navbar-sticky"
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-[#003b95] shadow-md border-b border-[#002f75] py-3'
-            : 'bg-[#003580] border-b border-[#002f75] py-4'
+            ? 'bg-[#0B2521] shadow-md border-b border-[#1A4B40]/40 py-3'
+            : 'bg-[#0B2521]/95 backdrop-blur-md border-b border-[#1A4B40]/20 py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
@@ -58,12 +58,12 @@ export default function Navbar({ onScheduleClick, onNavigate }: NavbarProps) {
             className="flex items-center space-x-3 cursor-pointer group"
             onClick={() => handleItemClick('home')}
           >
-            <Compass className="w-7 h-7 text-[#ffb700] transition-transform duration-500 group-hover:rotate-45" />
+            <Compass className="w-7 h-7 text-[#b28e46] transition-transform duration-500 group-hover:rotate-45" />
             <div className="flex flex-col">
               <span className="font-sans text-lg tracking-[0.15em] text-white font-bold leading-none">
                 HORIZON
               </span>
-              <span className="text-[9px] tracking-[0.25em] text-[#ffb700] font-sans font-bold uppercase leading-none mt-1">
+              <span className="text-[9px] tracking-[0.25em] text-[#b28e46] font-sans font-bold uppercase leading-none mt-1">
                 ESTATES KENYA
               </span>
             </div>
@@ -75,7 +75,7 @@ export default function Navbar({ onScheduleClick, onNavigate }: NavbarProps) {
               <button
                 key={item.id}
                 onClick={() => handleItemClick(item.id)}
-                className="text-xs tracking-wider text-white/90 hover:text-white font-sans uppercase font-semibold transition-colors duration-200 cursor-pointer py-1.5 px-3 rounded hover:bg-white/10"
+                className="text-xs tracking-wider text-white/90 hover:text-[#b28e46] font-sans uppercase font-semibold transition-colors duration-200 cursor-pointer py-1.5 px-3 rounded hover:bg-white/5"
               >
                 {item.name}
               </button>
@@ -86,9 +86,9 @@ export default function Navbar({ onScheduleClick, onNavigate }: NavbarProps) {
           <div className="hidden lg:flex items-center space-x-3">
             <button
               onClick={onScheduleClick}
-              className="flex items-center space-x-2 text-xs tracking-wider uppercase font-bold bg-[#ffb700] hover:bg-[#e0a100] text-[#1a1a1a] px-4 py-2.5 rounded transition-all duration-200 font-sans cursor-pointer shadow-sm"
+              className="flex items-center space-x-2 text-xs tracking-wider uppercase font-bold bg-[#b28e46] hover:bg-[#c9a562] text-white px-4 py-2.5 rounded transition-all duration-200 font-sans cursor-pointer shadow-sm"
             >
-              <Calendar className="w-4 h-4 text-[#1a1a1a]" />
+              <Calendar className="w-4 h-4 text-white" />
               <span>Book Viewing</span>
             </button>
           </div>
@@ -97,7 +97,7 @@ export default function Navbar({ onScheduleClick, onNavigate }: NavbarProps) {
           <button
             id="mobile-menu-toggle"
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white p-2 hover:text-[#ffb700] transition-colors duration-200 focus:outline-none"
+            className="lg:hidden text-white p-2 hover:text-[#b28e46] transition-colors duration-200 focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -114,7 +114,7 @@ export default function Navbar({ onScheduleClick, onNavigate }: NavbarProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 top-[60px] z-40 bg-[#003b95] border-t border-[#002f75] lg:hidden flex flex-col justify-between p-6 overflow-y-auto"
+            className="fixed inset-0 top-[60px] z-40 bg-[#0B2521] border-t border-[#1A4B40]/30 lg:hidden flex flex-col justify-between p-6 overflow-y-auto"
           >
             <div className="flex flex-col space-y-3">
               {navItems.map((item, index) => (
@@ -124,7 +124,7 @@ export default function Navbar({ onScheduleClick, onNavigate }: NavbarProps) {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.03 }}
                   onClick={() => handleItemClick(item.id)}
-                  className="text-left text-sm tracking-wider text-white hover:text-[#ffb700] font-sans font-bold uppercase py-2.5 border-b border-white/10 transition-colors"
+                  className="text-left text-sm tracking-wider text-white hover:text-[#b28e46] font-sans font-bold uppercase py-2.5 border-b border-white/5 transition-colors"
                 >
                   {item.name}
                 </motion.button>
@@ -137,7 +137,7 @@ export default function Navbar({ onScheduleClick, onNavigate }: NavbarProps) {
                   setIsOpen(false);
                   onScheduleClick();
                 }}
-                className="w-full flex items-center justify-center space-x-2 text-xs tracking-wider uppercase font-bold bg-[#ffb700] hover:bg-[#e0a100] text-[#1a1a1a] py-3.5 font-sans transition-all rounded shadow"
+                className="w-full flex items-center justify-center space-x-2 text-xs tracking-wider uppercase font-bold bg-[#b28e46] hover:bg-[#c9a562] text-white py-3.5 font-sans transition-all rounded shadow"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Viewing</span>

@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-2">
-          <span className="text-xs font-bold text-[#006ce4] uppercase tracking-wider">
+          <span className="text-xs font-bold text-[#b28e46] uppercase tracking-wider">
             Uncompromising Professionalism
           </span>
           <h2 className="font-sans text-2xl sm:text-3xl text-slate-900 font-bold tracking-tight">
@@ -58,16 +58,16 @@ export default function WhyChooseUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="group bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md transition-all duration-150 rounded-lg relative flex flex-col justify-between"
+                className="group bg-white border border-stone-200 p-6 shadow-sm hover:shadow-md transition-all duration-150 rounded-lg relative flex flex-col justify-between"
               >
                 <div className="space-y-4">
                   {/* Icon */}
-                  <div className="w-10 h-10 flex items-center justify-center rounded-md bg-[#006ce4]/5 border border-slate-200 text-[#003b95] transition-colors duration-150">
+                  <div className="w-10 h-10 flex items-center justify-center rounded-md bg-[#1A4B40]/5 border border-stone-200 text-[#1A4B40] transition-colors duration-150">
                     <IconComponent className="w-5 h-5" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-sans text-sm font-bold text-slate-900 group-hover:text-[#006ce4] transition-colors duration-150">
+                  <h3 className="font-sans text-sm font-bold text-slate-900 group-hover:text-[#1A4B40] transition-colors duration-150">
                     {card.title}
                   </h3>
 

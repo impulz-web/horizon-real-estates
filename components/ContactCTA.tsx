@@ -49,12 +49,12 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
         {/* Left Side: Contact copy & specs */}
         <div className="lg:col-span-5 space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold text-[#006ce4] uppercase tracking-wider">
+            <span className="text-xs font-bold text-[#b28e46] uppercase tracking-wider">
               SECURE REGISTRATION
             </span>
             <h2 className="font-sans text-2xl sm:text-3xl text-slate-900 font-bold tracking-tight">
               Book a Private <br />
-              <span className="text-[#006ce4]">Consultation</span>
+              <span className="text-[#1A4B40]">Consultation</span>
             </h2>
           </div>
 
@@ -65,22 +65,22 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
 
           <div className="space-y-3 pt-4 border-t border-slate-200">
             <div className="flex items-center space-x-3 text-xs text-slate-700 font-sans font-medium">
-              <Phone className="w-4 h-4 text-[#006ce4]" />
+              <Phone className="w-4 h-4 text-[#1A4B40]" />
               <span>+254 700 000 000 (Nairobi Office)</span>
             </div>
             <div className="flex items-center space-x-3 text-xs text-slate-700 font-sans font-medium">
-              <Mail className="w-4 h-4 text-[#006ce4]" />
+              <Mail className="w-4 h-4 text-[#1A4B40]" />
               <span>concierge@horizonproperties.co.ke</span>
             </div>
             <div className="flex items-center space-x-3 text-xs text-slate-700 font-sans font-medium">
-              <Clock className="w-4 h-4 text-[#006ce4]" />
+              <Clock className="w-4 h-4 text-[#1A4B40]" />
               <span>Mon - Sat: 08:00 - 18:00 (EAT)</span>
             </div>
           </div>
 
-          <div className="bg-[#006ce4]/5 border border-blue-200 p-4 flex items-center space-x-3 rounded-lg">
-            <ShieldCheck className="w-5 h-5 text-[#003b95] shrink-0" />
-            <span className="text-[10px] text-[#003b95] uppercase tracking-wider font-bold">
+          <div className="bg-[#1A4B40]/5 border border-stone-200 p-4 flex items-center space-x-3 rounded-lg">
+            <ShieldCheck className="w-5 h-5 text-[#1A4B40] shrink-0" />
+            <span className="text-[10px] text-[#1A4B40] uppercase tracking-wider font-bold">
               Discretion Guaranteed | GDPR & NDAs Enforced
             </span>
           </div>
@@ -96,7 +96,7 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
                 animate={{ opacity: 1 }}
                 className="text-center py-10 space-y-4"
               >
-                <div className="w-12 h-12 rounded-full border border-blue-200 flex items-center justify-center text-[#006ce4] mx-auto bg-[#006ce4]/5 shadow-sm">
+                <div className="w-12 h-12 rounded-full border border-stone-200 flex items-center justify-center text-[#1A4B40] mx-auto bg-[#1A4B40]/5 shadow-sm">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
                 <h3 className="font-sans text-lg font-bold text-slate-900">Confidential Request Received</h3>
@@ -106,7 +106,7 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="text-xs font-bold text-[#006ce4] hover:underline mt-4 cursor-pointer"
+                  className="text-xs font-bold text-[#1A4B40] hover:underline mt-4 cursor-pointer"
                 >
                   Submit Another Consultation Request
                 </button>
@@ -126,7 +126,7 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
                       placeholder="e.g. Honorable John Doe"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#006ce4] focus:bg-white focus:outline-none transition-all duration-150"
+                      className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#1A4B40] focus:bg-white focus:outline-none transition-all duration-150"
                     />
                   </div>
 
@@ -141,7 +141,7 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
                       placeholder="e.g. john@privateoffice.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#006ce4] focus:bg-white focus:outline-none transition-all duration-150"
+                      className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#1A4B40] focus:bg-white focus:outline-none transition-all duration-150"
                     />
                   </div>
 
@@ -156,7 +156,7 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
                       placeholder="e.g. +254 712 345 678"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#006ce4] focus:bg-white focus:outline-none transition-all duration-150"
+                      className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#1A4B40] focus:bg-white focus:outline-none transition-all duration-150"
                     />
                   </div>
 
@@ -168,7 +168,7 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
                     <select
                       value={formData.region}
                       onChange={(e) => setFormData({ ...formData, region: e.target.value })}
-                      className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#006ce4] focus:bg-white focus:outline-none transition-all duration-150 cursor-pointer"
+                      className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#1A4B40] focus:bg-white focus:outline-none transition-all duration-150 cursor-pointer"
                     >
                       <option value="Nairobi">Nairobi (Karen/Runda/Westlands)</option>
                       <option value="Mombasa">Mombasa (Nyali/Shanzu)</option>
@@ -192,7 +192,7 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
                     placeholder="Describe your ideal location, structural parameters, or investment goals in detail..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#006ce4] focus:bg-white focus:outline-none transition-all duration-150 resize-none"
+                    className="bg-slate-50 border border-slate-200 rounded p-3 text-xs text-[#1a1a1a] focus:border-[#1A4B40] focus:bg-white focus:outline-none transition-all duration-150 resize-none"
                   />
                 </div>
 
@@ -200,7 +200,7 @@ export default function ContactCTA({ prefilledAgent }: ContactCTAProps) {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex items-center justify-center space-x-2 text-xs tracking-wider uppercase font-bold bg-[#006ce4] hover:bg-[#003b95] disabled:bg-slate-300 text-white py-3.5 rounded transition-all duration-150 cursor-pointer shadow-xs"
+                  className="w-full flex items-center justify-center space-x-2 text-xs tracking-wider uppercase font-bold bg-[#1A4B40] hover:bg-[#0B2521] disabled:bg-slate-300 text-white py-3.5 rounded transition-all duration-150 cursor-pointer shadow-xs"
                 >
                   <Send className="w-4 h-4" />
                   <span>{loading ? 'Transmitting Secure Request...' : 'Schedule Confidential Consultation'}</span>

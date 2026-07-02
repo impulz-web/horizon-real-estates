@@ -113,9 +113,9 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <div className="flex items-center space-x-2 bg-[#006ce4]/5 border border-[#006ce4]/20 px-3 py-1.5 w-fit mx-auto rounded">
-            <Sparkles className="w-4 h-4 text-[#006ce4]" />
-            <span className="text-[10px] tracking-wider uppercase font-bold text-[#003b95]">
+          <div className="flex items-center space-x-2 bg-[#1A4B40]/5 border border-[#1A4B40]/20 px-3 py-1.5 w-fit mx-auto rounded">
+            <Sparkles className="w-4 h-4 text-[#b28e46]" />
+            <span className="text-[10px] tracking-wider uppercase font-bold text-[#1A4B40]">
               Horizon Intelligence Advisor
             </span>
           </div>
@@ -133,11 +133,11 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex flex-col space-y-2">
               <label className="text-[10px] uppercase tracking-wider text-slate-500 font-bold flex items-center space-x-2">
-                <MessageSquare className="w-4 h-4 text-[#006ce4]" />
+                <MessageSquare className="w-4 h-4 text-[#b28e46]" />
                 <span>Confidential Inquiry Prompt</span>
               </label>
               
-              <div className="relative flex items-center border border-slate-200 bg-slate-50 rounded focus-within:border-[#006ce4] focus-within:bg-white transition-all">
+              <div className="relative flex items-center border border-slate-200 bg-slate-50 rounded focus-within:border-[#1A4B40] focus-within:bg-white transition-all">
                 <textarea
                   rows={3}
                   required
@@ -157,7 +157,7 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
                     key={qp.label}
                     type="button"
                     onClick={() => handleQuickPromptClick(qp.text)}
-                    className="text-[9px] tracking-wider uppercase font-bold border border-slate-200 hover:border-[#006ce4] bg-white px-3 py-2 text-slate-600 hover:text-[#006ce4] rounded transition-all duration-150 cursor-pointer"
+                    className="text-[9px] tracking-wider uppercase font-bold border border-slate-200 hover:border-[#1A4B40] bg-white px-3 py-2 text-slate-600 hover:text-[#1A4B40] rounded transition-all duration-150 cursor-pointer"
                   >
                     {qp.label}
                   </button>
@@ -167,7 +167,7 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
               <button
                 type="submit"
                 disabled={loading || !prompt.trim()}
-                className="w-full sm:w-auto shrink-0 flex items-center justify-center space-x-2 text-xs tracking-wider uppercase font-bold bg-[#006ce4] hover:bg-[#003b95] disabled:bg-slate-300 text-white px-5 py-3.5 rounded transition-colors duration-150 cursor-pointer"
+                className="w-full sm:w-auto shrink-0 flex items-center justify-center space-x-2 text-xs tracking-wider uppercase font-bold bg-[#1A4B40] hover:bg-[#0B2521] disabled:bg-slate-300 text-white px-5 py-3.5 rounded transition-colors duration-150 cursor-pointer"
               >
                 <span>{loading ? 'Consulting Advisors...' : 'Match with AI Concierge'}</span>
                 <ArrowRight className="w-4 h-4" />
@@ -184,8 +184,8 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
                 exit={{ opacity: 0 }}
                 className="absolute inset-0 bg-white/95 backdrop-blur-xs flex flex-col items-center justify-center p-8 text-center rounded-lg"
               >
-                <div className="w-8 h-8 border-2 border-[#006ce4] border-t-transparent rounded-full animate-spin mb-3" />
-                <p className="text-xs font-semibold tracking-wider text-[#003b95] uppercase">
+                <div className="w-8 h-8 border-2 border-[#1A4B40] border-t-transparent rounded-full animate-spin mb-3" />
+                <p className="text-xs font-semibold tracking-wider text-[#1A4B40] uppercase">
                   {loadingMessages[loadingStep]}
                 </p>
                 <p className="text-[10px] text-slate-500 uppercase mt-1 font-sans">
@@ -211,7 +211,7 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
               <div className="bg-white border border-slate-200 p-6 sm:p-8 shadow-sm rounded-lg space-y-5">
                 
                 <div className="flex items-center space-x-2 border-b border-slate-100 pb-3">
-                  <Compass className="w-5 h-5 text-[#006ce4]" />
+                  <Compass className="w-5 h-5 text-[#b28e46]" />
                   <h3 className="font-sans text-base font-bold text-slate-900">
                     Private Concierge Assessment
                   </h3>
@@ -236,7 +236,7 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
                     <ul className="space-y-2">
                       {result.recommendationReasons.map((reason, idx) => (
                         <li key={idx} className="flex items-start space-x-2 text-xs text-slate-600 font-sans">
-                          <CornerDownRight className="w-4 h-4 text-[#006ce4] shrink-0 mt-0.5" />
+                          <CornerDownRight className="w-4 h-4 text-[#1A4B40] shrink-0 mt-0.5" />
                           <span>{reason}</span>
                         </li>
                       ))}
@@ -245,9 +245,9 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
 
                   {/* Investment Advice */}
                   <div className="p-4 bg-slate-50 border border-slate-200 rounded flex items-start space-x-3 mt-4">
-                    <Landmark className="w-5 h-5 text-[#003b95] shrink-0 mt-0.5" />
+                    <Landmark className="w-5 h-5 text-[#1A4B40] shrink-0 mt-0.5" />
                     <div className="space-y-1">
-                      <p className="text-[9px] uppercase tracking-wider text-[#003b95] font-bold font-sans">
+                      <p className="text-[9px] uppercase tracking-wider text-[#1A4B40] font-bold font-sans">
                         REGIONAL INVESTMENT & DISCRETION MEMORANDUM
                       </p>
                       <p className="text-[11px] text-slate-600 font-sans leading-relaxed">
@@ -281,7 +281,7 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
                           referrerPolicy="no-referrer"
                           sizes="(max-w-768px) 100vw, 33vw"
                         />
-                        <div className="absolute top-3 left-3 bg-[#003580] text-white text-[9px] font-bold px-2 py-0.5 rounded">
+                        <div className="absolute top-3 left-3 bg-[#0B2521] text-white text-[9px] font-bold px-2.5 py-0.5 rounded border border-[#b28e46]/10">
                           {prop.tag}
                         </div>
                       </div>
@@ -291,7 +291,7 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
                           <p className="text-[10px] text-slate-400 uppercase tracking-wider font-sans font-semibold">
                             {prop.location}
                           </p>
-                          <h5 className="font-sans text-sm font-bold text-slate-900 mt-1 group-hover:text-[#006ce4] transition-colors">
+                          <h5 className="font-sans text-sm font-bold text-slate-900 mt-1 group-hover:text-[#1A4B40] transition-colors">
                             {prop.title}
                           </h5>
                         </div>
@@ -303,7 +303,7 @@ export default function AiConcierge({ onPropertyClick }: AiConciergeProps) {
                               ${prop.price.toLocaleString()}
                             </span>
                           </div>
-                          <span className="text-[10px] uppercase font-bold text-[#006ce4] group-hover:underline transition-all">
+                          <span className="text-[10px] uppercase font-bold text-[#1A4B40] group-hover:underline transition-all">
                             Inspect Asset
                           </span>
                         </div>

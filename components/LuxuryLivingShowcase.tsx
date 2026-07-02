@@ -56,7 +56,7 @@ export default function LuxuryLivingShowcase() {
         
         {/* Section Title */}
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <span className="text-xs font-bold text-[#006ce4] uppercase tracking-wider">
+          <span className="text-xs font-bold text-[#b28e46] uppercase tracking-wider">
             Bespoke Portfolios
           </span>
           <h2 className="font-sans text-2xl sm:text-3xl text-slate-900 font-bold tracking-tight">
@@ -82,12 +82,12 @@ export default function LuxuryLivingShowcase() {
                     isEven ? 'lg:order-1' : 'lg:order-2'
                   }`}
                 >
-                  <span className="text-xs font-bold text-[#006ce4] uppercase tracking-wider">
+                  <span className="text-xs font-bold text-[#b28e46] uppercase tracking-wider">
                     {item.category}
                   </span>
                   
                   <h3 className="font-sans text-xl sm:text-2xl font-bold leading-tight text-slate-900">
-                    {item.title} <span className="text-[#006ce4] block text-base font-semibold mt-1">{item.location}</span>
+                    {item.title} <span className="text-[#1A4B40] block text-base font-semibold mt-1">{item.location}</span>
                   </h3>
 
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-sans">
@@ -119,16 +119,16 @@ export default function LuxuryLivingShowcase() {
                     className={`relative h-[280px] bg-gradient-to-br ${item.visualTheme} border p-6 flex flex-col justify-between shadow-sm rounded-lg overflow-hidden`}
                   >
                     {/* Background architectural grid line mockup */}
-                    <div className="absolute inset-0 bg-[linear-gradient(rgba(0,108,228,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,108,228,0.02)_1px,transparent_1px)] bg-[size:20px_20px]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(rgba(26,75,64,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(26,75,64,0.02)_1px,transparent_1px)] bg-[size:20px_20px]" />
 
                     <div className="flex justify-between items-start relative z-10">
                       <div>
-                        <span className="text-[9px] font-bold text-[#003b95] tracking-wider">
+                        <span className="text-[9px] font-bold text-[#1A4B40] tracking-wider">
                           PORTFOLIO STANDARD
                         </span>
                         <p className="font-sans text-sm font-bold text-[#1a1a1a] mt-0.5">{item.tag}</p>
                       </div>
-                      <div className="w-8 h-8 rounded-full border border-blue-200 bg-white flex items-center justify-center text-[#003b95] shadow-sm">
+                      <div className="w-8 h-8 rounded-full border border-stone-200 bg-white flex items-center justify-center text-[#1A4B40] shadow-sm">
                         <Award className="w-4 h-4" />
                       </div>
                     </div>
@@ -160,7 +160,7 @@ export default function LuxuryLivingShowcase() {
                       <div className="text-[10px] font-semibold text-slate-400">
                         Horizon Properties Kenya
                       </div>
-                      <div className="flex items-center space-x-1.5 text-xs text-[#006ce4] hover:underline cursor-pointer font-bold">
+                      <div className="flex items-center space-x-1.5 text-xs text-[#1A4B40] hover:underline cursor-pointer font-bold">
                         <span>Inspect Listing</span>
                         <Eye className="w-3.5 h-3.5" />
                       </div>

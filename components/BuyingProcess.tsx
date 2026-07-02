@@ -38,7 +38,7 @@ export default function BuyingProcess() {
         
         {/* Section Header */}
         <div className="max-w-2xl mb-12 space-y-2">
-          <span className="text-xs font-bold text-[#006ce4] uppercase tracking-wider">
+          <span className="text-xs font-bold text-[#b28e46] uppercase tracking-wider">
             THE JOURNEY
           </span>
           <h2 className="font-sans text-2xl sm:text-3xl text-slate-900 font-bold tracking-tight">
@@ -65,7 +65,7 @@ export default function BuyingProcess() {
               >
                 {/* Connector Arrow for Desktop */}
                 {index < 3 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-3.5 translate-y-[-50%] z-20 text-slate-300 group-hover:text-[#006ce4] transition-colors">
+                  <div className="hidden lg:block absolute top-1/2 -right-3.5 translate-y-[-50%] z-20 text-slate-300 group-hover:text-[#1A4B40] transition-colors">
                     <ArrowRight className="w-5 h-5" />
                   </div>
                 )}
@@ -73,7 +73,7 @@ export default function BuyingProcess() {
                 <div className="space-y-4">
                   {/* Step Header */}
                   <div className="flex justify-between items-center">
-                    <div className="w-10 h-10 flex items-center justify-center rounded-md border border-slate-200 text-[#003b95] bg-[#006ce4]/5 group-hover:bg-[#006ce4] group-hover:text-white transition-all duration-150">
+                    <div className="w-10 h-10 flex items-center justify-center rounded-md border border-slate-200 text-[#1A4B40] bg-[#1A4B40]/5 group-hover:bg-[#1A4B40] group-hover:text-white transition-all duration-150">
                       <IconComponent className="w-5 h-5" />
                     </div>
                     <span className="font-sans text-2xl text-slate-300 font-bold tracking-tight leading-none">
@@ -82,7 +82,7 @@ export default function BuyingProcess() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-sans text-sm font-bold text-slate-900 group-hover:text-[#006ce4] transition-colors">
+                  <h3 className="font-sans text-sm font-bold text-slate-900 group-hover:text-[#1A4B40] transition-colors">
                     {step.title}
                   </h3>
 
@@ -92,7 +92,7 @@ export default function BuyingProcess() {
                   </p>
                 </div>
 
-                <div className="text-[10px] uppercase font-bold text-[#006ce4]">
+                <div className="text-[10px] uppercase font-bold text-[#1A4B40]">
                   Horizon Properties
                 </div>
               </motion.div>

@@ -48,7 +48,7 @@ export default function MeetOurAgents({ onContactClick }: MeetOurAgentsProps) {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div className="space-y-2">
-            <span className="text-xs font-bold text-[#006ce4] uppercase tracking-wider">
+            <span className="text-xs font-bold text-[#b28e46] uppercase tracking-wider">
               The Elite Advisory
             </span>
             <h2 className="font-sans text-2xl sm:text-3xl text-slate-900 font-bold tracking-tight">
@@ -83,7 +83,7 @@ export default function MeetOurAgents({ onContactClick }: MeetOurAgentsProps) {
                 />
                 
                 {/* Specialty indicator */}
-                <div className="absolute bottom-3 left-3 right-3 bg-white/95 border border-slate-200 backdrop-blur-sm py-1.5 px-2 text-center rounded text-[10px] tracking-wide text-[#003b95] uppercase font-bold shadow-sm">
+                <div className="absolute bottom-3 left-3 right-3 bg-white/95 border border-slate-200 backdrop-blur-sm py-1.5 px-2 text-center rounded text-[10px] tracking-wide text-[#1A4B40] uppercase font-bold shadow-sm">
                   {agent.specialty}
                 </div>
               </div>
@@ -91,13 +91,13 @@ export default function MeetOurAgents({ onContactClick }: MeetOurAgentsProps) {
               {/* Text Area */}
               <div className="p-5 space-y-4 flex-grow flex flex-col justify-between">
                 <div className="space-y-1">
-                  <h3 className="font-sans text-base text-slate-900 font-bold group-hover:text-[#006ce4] transition-colors">
+                  <h3 className="font-sans text-base text-slate-900 font-bold group-hover:text-[#1A4B40] transition-colors">
                     {agent.name}
                   </h3>
                   <p className="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">
                     {agent.position}
                   </p>
-                  <p className="text-xs font-bold text-[#008009]">
+                  <p className="text-xs font-bold text-[#107255]">
                     {agent.experience}
                   </p>
                 </div>
@@ -105,7 +105,7 @@ export default function MeetOurAgents({ onContactClick }: MeetOurAgentsProps) {
                 <div className="pt-3 border-t border-slate-100">
                   <button
                     onClick={() => onContactClick(agent.name)}
-                    className="w-full flex items-center justify-center space-x-2 text-xs font-bold bg-white border border-[#006ce4] hover:bg-[#006ce4] hover:text-white text-[#006ce4] py-2.5 rounded transition-colors duration-150 cursor-pointer"
+                    className="w-full flex items-center justify-center space-x-2 text-xs font-bold bg-white border border-[#1A4B40] hover:bg-[#1A4B40] hover:text-white text-[#1A4B40] py-2.5 rounded transition-colors duration-150 cursor-pointer"
                   >
                     <Mail className="w-4 h-4" />
                     <span>Request Consultation</span>

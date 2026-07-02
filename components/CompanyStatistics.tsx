@@ -64,9 +64,9 @@ function StatCard({ stat, index }: StatCardProps) {
       initial={{ opacity: 0, y: 10 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.3, delay: index * 0.05 }}
-      className="p-6 border-l border-slate-200 hover:border-[#006ce4] transition-colors duration-150 space-y-2"
+      className="p-6 border-l border-slate-200 hover:border-[#1A4B40] transition-colors duration-150 space-y-2"
     >
-      <div className="font-sans text-3xl sm:text-4xl font-bold text-[#006ce4] flex items-baseline leading-none">
+      <div className="font-sans text-3xl sm:text-4xl font-bold text-[#b28e46] flex items-baseline leading-none">
         <span>{count.toLocaleString()}</span>
         <span className="text-xl ml-0.5">{stat.suffix}</span>
       </div>

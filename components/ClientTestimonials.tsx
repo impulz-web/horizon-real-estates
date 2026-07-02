@@ -36,7 +36,7 @@ export default function ClientTestimonials() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-2">
-          <span className="text-xs font-bold text-[#006ce4] uppercase tracking-wider">
+          <span className="text-xs font-bold text-[#b28e46] uppercase tracking-wider">
             UNPARALLELED REPUTATION
           </span>
           <h2 className="font-sans text-2xl sm:text-3xl text-slate-900 font-bold tracking-tight">
@@ -56,13 +56,13 @@ export default function ClientTestimonials() {
               className="group bg-white border border-slate-200 p-6 sm:p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-150 flex flex-col justify-between relative"
             >
               {/* Quote Icon overlay */}
-              <Quote className="absolute top-6 right-6 w-10 h-10 text-slate-100 group-hover:text-blue-50 transition-colors duration-150" />
+              <Quote className="absolute top-6 right-6 w-10 h-10 text-slate-100 group-hover:text-emerald-50/20 transition-colors duration-150" />
 
               <div className="space-y-4">
-                {/* Booking.com yellow Stars */}
+                {/* Brass Gold Stars */}
                 <div className="flex space-x-1">
                   {[...Array(item.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-[#febb02] text-[#febb02]" />
+                    <Star key={i} className="w-4 h-4 fill-[#b28e46] text-[#b28e46]" />
                   ))}
                 </div>
 
@@ -88,7 +88,7 @@ export default function ClientTestimonials() {
                   <h4 className="font-sans text-xs font-bold text-slate-900 leading-none">
                     {item.name}
                   </h4>
-                  <span className="text-[10px] text-[#006ce4] font-sans uppercase tracking-wider font-bold mt-1 block">
+                  <span className="text-[10px] text-[#1A4B40] font-sans uppercase tracking-wider font-bold mt-1 block">
                     {item.property}
                   </span>
                 </div>
